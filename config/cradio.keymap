@@ -13,6 +13,11 @@
 
 &sk { ignore-modifiers; };
 
+ZMK_TRI_STATE(swapper,
+    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+    ignored-key-positions = <LT2>;
+)
+
 / {
     macros {
         // sometimes my device thinks a modifier is being held down
@@ -38,10 +43,6 @@
 
     };
 
-ZMK_TRI_STATE(swapper,
-    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-    ignored-key-positions = <LT2>;
-)
     keymap {
         compatible = "zmk,keymap";
 
