@@ -38,15 +38,15 @@
 
     };
 
+ZMK_TRI_STATE(swapper,
+    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+    ignored-key-positions = <LT2>;
+)
     keymap {
         compatible = "zmk,keymap";
 
         // Base alpha layer
 
-ZMK_TRI_STATE(swapper,
-    bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-    ignored-key-positions = <LT2>;
-)
 
         default_layer {
             bindings = <
